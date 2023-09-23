@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    outline: none;
+}
+
+.top-distance{
+    padding-top: 6rem;
+}
+.bottom-distance {
+    padding-bottom: 7rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(15, 14, 14);
+}
+
+.bg-dark {
+    background-color: rgb(15, 14, 14) !important;
+}
+
+.navbar {
+    padding: 1.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-brand {
+    font-family: 'Lobster';
+    font-size: 25px;
+}
+
+.nav-item{
+    border-radius: 10px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease-in;
+}
+
+.nav-item:hover{
+    background-color: #1e3050;
+    transform: translateX(-15px);
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+} 
+
+.banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.tagline {
+    position: absolute;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.medsos {
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: white;
+    animation: animate 3s alternate infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.foto-profile img{
+    width: 15%;
+    border-radius: 50%;
+}
+
+.about {
+    border: 1px solid white;
+    padding: 1rem;
+    width: 500px;
+    background-color: white;
+}
+
+.object-3d-text{
+    font-weight: 400;
+}
+
+.d-cube {
+    border: 2px solid white;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.cube{
+    padding-top: 4rem;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: cube 15s linear infinite;
+}
+.side{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+.front{
+    transform: translateZ(75px);
+}   
+.top{
+    transform: rotateX(90deg) translateZ(75px);
+}
+.right{
+    transform: rotateY(90deg) translateZ(75px);
+}
+.left{
+    transform: rotateY(-90deg) translateZ(75px);
+}
+.bottom{
+    transform: rotateX(-90deg) translateZ(75px);
+}
+.back{
+    transform: rotateY(-180deg) translateZ(75px);
+}
+.inside{
+    display: flex;
+    flex-direction: row;
+}
+.inside > * {
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid aqua;
+    box-shadow: inset 0 0 10px aqua;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .7);
+    animation: insides 2s linear;
+}
+
+@keyframes cube {
+    100% {
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+}
+@keyframes insides {
+    0% {
+        transform: scale(0);
+    }
+}
+
+.dx-all{
+    padding-top: 6rem;
+}
+
+.location-border{
+    border: 1px solid rgb(67, 67, 67);
+    padding: 1rem 1rem;
+}
+
+.img-slider{
+    height: 75vh;
+    opacity: 0.3;
+}
+
+.btn{
+    background-color: #FF9138;
+}
+
+.row{
+    margin-top: 5rem;
+}
+
+.img-logo{
+    border-radius: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 1rem;
+}
+.card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s ease-in;
+}
+.card:hover .card-body {
+    right: 0;
+}
+.card-title {
+    font-weight: 800;
+    color: white;
+}
+.card-info {
+    font-size: 13px;
+    line-height: 1rem;
+    margin: 5px 0;
+}
+.btn:hover{
+    background-color: white;
+    border: 2px solid #FF9138;
+}
+.size-in{
+    border-top: 1px solid rgb(85, 85, 85);
+    width: 100%;
+    height: 50vh;
+}
+.list-in ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-in ul a{
+    text-decoration: none;
+    color: white;
+}
+.list-in ul li {
+    margin-top: 1rem;
+}
+.maps-setting {
+    width: 250px;
+    height: auto;
+}
+.btn-send {
+    background: rgb(15, 14, 14);
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    width: 50%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.btn-send:hover{
+    background-color: white;
+    color: rgb(15, 14, 14);
+}
